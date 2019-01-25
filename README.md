@@ -8,6 +8,7 @@ A 68-point Facial landmark at 28-30 FPS on iPhone 6S+. HyperLandmark is get from
 
 ## Results
 <img src="https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1636.PNG" width="25%"><img src="https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1637.PNG" width="25%"><img src="https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1638.PNG" width="25%"><img src="https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1639.PNG" width="25%">
+### ~ 28-30 FPS
 
 ## Issues
 - Shake
