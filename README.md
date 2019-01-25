@@ -7,7 +7,10 @@ A 68-point Facial landmark at 28-30 FPS on iPhone 6S+. HyperLandmark is get from
 - [HyperLandmark C++ version](https://github.com/zeusees/HyperLandmark/tree/master/Prj-Win)
 
 ## Results
-<div style="width:50%">![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1636.PNG)![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1637.PNG)![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1638.PNG)![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1639.PNG)
+![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1636.PNG){ width=50% }
+  ![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1637.PNG)
+  ![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1638.PNG)
+  ![result1](https://github.com/elhoangvu/HyperLandmark-iOS/blob/master/Results/IMG_1639.PNG)
 ## Issues
 - Shake
 - Don't support rotation-invariant facial landmark
