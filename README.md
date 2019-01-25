@@ -21,3 +21,5 @@ A 68-point Facial landmark at 28-30 FPS on iPhone 6S+. HyperLandmark is get from
 - OpenCV@2
 - Facial landmark at 30 FPS
 - Realtime
+
+##### Thank authors: chengzhengxin, zeusees
