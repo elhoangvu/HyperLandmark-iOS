@@ -68,6 +68,8 @@ using namespace cv;
 
 - (void)processImage:(cv::Mat &)image
 {
+    NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
+ 
     _modelt->track(image, *_currentShape);
     cv::Vec3d eav;
     _modelt->EstimateHeadPose((*_currentShape)[0], eav);
@@ -84,6 +86,8 @@ using namespace cv;
             }
         }
     });
+    NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
+    NSLog(@">>>> FPS: %f", 1.0f/(end - start));
 }
 
 
