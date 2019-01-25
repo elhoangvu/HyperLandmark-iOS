@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B7D3BE7721FA93730089D139 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BE7621FA93730089D139 /* AppDelegate.m */; };
-		B7D3BE7A21FA93730089D139 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BE7921FA93730089D139 /* ViewController.m */; };
+		B7D3BE7A21FA93730089D139 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BE7921FA93730089D139 /* ViewController.mm */; };
 		B7D3BE7D21FA93730089D139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BE7B21FA93730089D139 /* Main.storyboard */; };
 		B7D3BE7F21FA93750089D139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BE7E21FA93750089D139 /* Assets.xcassets */; };
 		B7D3BE8221FA93750089D139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BE8021FA93750089D139 /* LaunchScreen.storyboard */; };
 		B7D3BE8521FA93750089D139 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BE8421FA93750089D139 /* main.m */; };
+		B7D3BEDB21FA949C0089D139 /* landmark-model.bin in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BE8C21FA949C0089D139 /* landmark-model.bin */; };
+		B7D3BEDC21FA949C0089D139 /* haar_facedetection.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BE8D21FA949C0089D139 /* haar_facedetection.xml */; };
+		B7D3BEDD21FA949C0089D139 /* hog.c in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BE8F21FA949C0089D139 /* hog.c */; };
+		B7D3BEE021FA949C0089D139 /* manual.html in Resources */ = {isa = PBXBuildFile; fileRef = B7D3BED521FA949C0089D139 /* manual.html */; };
+		B7D3BEE121FA949C0089D139 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BED721FA949C0089D139 /* helper.cpp */; };
+		B7D3BEE221FA949C0089D139 /* feature_descriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BED821FA949C0089D139 /* feature_descriptor.cpp */; };
+		B7D3BEE321FA949C0089D139 /* ldmarkmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BED921FA949C0089D139 /* ldmarkmodel.cpp */; };
+		B7D3BEE421FA949C0089D139 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D3BEDA21FA949C0089D139 /* main.cpp */; };
+		B7D3BEE621FA94C30089D139 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3BEE521FA94C30089D139 /* opencv2.framework */; };
+		B7D3BEEA21FAA9610089D139 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3BEE921FAA9610089D139 /* Accelerate.framework */; };
+		B7D3BEEC21FAA96B0089D139 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3BEEB21FAA96A0089D139 /* AVFoundation.framework */; };
+		B7D3BEEE21FAA97A0089D139 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3BEED21FAA97A0089D139 /* CoreMedia.framework */; };
+		B7D3BEF021FAAA5D0089D139 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3BEEF21FAAA5D0089D139 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +33,86 @@
 		B7D3BE7521FA93730089D139 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B7D3BE7621FA93730089D139 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B7D3BE7821FA93730089D139 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B7D3BE7921FA93730089D139 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7D3BE7921FA93730089D139 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		B7D3BE7C21FA93730089D139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7D3BE7E21FA93750089D139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D3BE8121FA93750089D139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7D3BE8321FA93750089D139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D3BE8421FA93750089D139 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7D3BE8C21FA949C0089D139 /* landmark-model.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "landmark-model.bin"; sourceTree = "<group>"; };
+		B7D3BE8D21FA949C0089D139 /* haar_facedetection.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haar_facedetection.xml; sourceTree = "<group>"; };
+		B7D3BE8F21FA949C0089D139 /* hog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hog.c; sourceTree = "<group>"; };
+		B7D3BE9121FA949C0089D139 /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		B7D3BE9321FA949C0089D139 /* ThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadPool.h; sourceTree = "<group>"; };
+		B7D3BE9421FA949C0089D139 /* mat_serialization.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat_serialization.hpp; sourceTree = "<group>"; };
+		B7D3BE9521FA949C0089D139 /* mat_cerealisation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat_cerealisation.hpp; sourceTree = "<group>"; };
+		B7D3BE9621FA949C0089D139 /* feature_descriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature_descriptor.h; sourceTree = "<group>"; };
+		B7D3BE9721FA949C0089D139 /* hog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hog.h; sourceTree = "<group>"; };
+		B7D3BE9821FA949C0089D139 /* ldmarkmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldmarkmodel.h; sourceTree = "<group>"; };
+		B7D3BE9A21FA949C0089D139 /* access.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = access.hpp; sourceTree = "<group>"; };
+		B7D3BE9C21FA949C0089D139 /* base_class.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_class.hpp; sourceTree = "<group>"; };
+		B7D3BE9D21FA949C0089D139 /* unordered_map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = unordered_map.hpp; sourceTree = "<group>"; };
+		B7D3BE9E21FA949C0089D139 /* boost_variant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = boost_variant.hpp; sourceTree = "<group>"; };
+		B7D3BE9F21FA949C0089D139 /* utility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = utility.hpp; sourceTree = "<group>"; };
+		B7D3BEA021FA949C0089D139 /* bitset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bitset.hpp; sourceTree = "<group>"; };
+		B7D3BEA121FA949C0089D139 /* array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
+		B7D3BEA221FA949C0089D139 /* polymorphic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = polymorphic.hpp; sourceTree = "<group>"; };
+		B7D3BEA321FA949C0089D139 /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		B7D3BEA421FA949C0089D139 /* map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = map.hpp; sourceTree = "<group>"; };
+		B7D3BEA521FA949C0089D139 /* complex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = complex.hpp; sourceTree = "<group>"; };
+		B7D3BEA621FA949C0089D139 /* tuple.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tuple.hpp; sourceTree = "<group>"; };
+		B7D3BEA721FA949C0089D139 /* queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = queue.hpp; sourceTree = "<group>"; };
+		B7D3BEA821FA949C0089D139 /* list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = list.hpp; sourceTree = "<group>"; };
+		B7D3BEA921FA949C0089D139 /* forward_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = forward_list.hpp; sourceTree = "<group>"; };
+		B7D3BEAA21FA949C0089D139 /* set.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = set.hpp; sourceTree = "<group>"; };
+		B7D3BEAB21FA949C0089D139 /* string.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string.hpp; sourceTree = "<group>"; };
+		B7D3BEAC21FA949C0089D139 /* chrono.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chrono.hpp; sourceTree = "<group>"; };
+		B7D3BEAD21FA949C0089D139 /* deque.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = deque.hpp; sourceTree = "<group>"; };
+		B7D3BEAE21FA949C0089D139 /* stack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
+		B7D3BEAF21FA949C0089D139 /* memory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = memory.hpp; sourceTree = "<group>"; };
+		B7D3BEB021FA949C0089D139 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		B7D3BEB121FA949C0089D139 /* unordered_set.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = unordered_set.hpp; sourceTree = "<group>"; };
+		B7D3BEB221FA949C0089D139 /* macros.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = macros.hpp; sourceTree = "<group>"; };
+		B7D3BEB321FA949C0089D139 /* cereal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cereal.hpp; sourceTree = "<group>"; };
+		B7D3BEB521FA949C0089D139 /* static_object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = static_object.hpp; sourceTree = "<group>"; };
+		B7D3BEB621FA949C0089D139 /* traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = traits.hpp; sourceTree = "<group>"; };
+		B7D3BEB721FA949C0089D139 /* polymorphic_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = polymorphic_impl.hpp; sourceTree = "<group>"; };
+		B7D3BEB821FA949C0089D139 /* helpers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = helpers.hpp; sourceTree = "<group>"; };
+		B7D3BEB921FA949C0089D139 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		B7D3BEBB21FA949C0089D139 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		B7D3BEBC21FA949C0089D139 /* adapters.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = adapters.hpp; sourceTree = "<group>"; };
+		B7D3BEBD21FA949C0089D139 /* xml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xml.hpp; sourceTree = "<group>"; };
+		B7D3BEBE21FA949C0089D139 /* portable_binary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = portable_binary.hpp; sourceTree = "<group>"; };
+		B7D3BEBF21FA949C0089D139 /* binary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = binary.hpp; sourceTree = "<group>"; };
+		B7D3BEC221FA949C0089D139 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		B7D3BEC321FA949C0089D139 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		B7D3BEC421FA949C0089D139 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		B7D3BEC621FA949C0089D139 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		B7D3BEC721FA949C0089D139 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		B7D3BEC821FA949C0089D139 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		B7D3BEC921FA949C0089D139 /* genericstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericstream.h; sourceTree = "<group>"; };
+		B7D3BECA21FA949C0089D139 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		B7D3BECB21FA949C0089D139 /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
+		B7D3BECC21FA949C0089D139 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		B7D3BECD21FA949C0089D139 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		B7D3BECE21FA949C0089D139 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		B7D3BED021FA949C0089D139 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
+		B7D3BED121FA949C0089D139 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
+		B7D3BED221FA949C0089D139 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		B7D3BED321FA949C0089D139 /* rapidxml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
+		B7D3BED421FA949C0089D139 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		B7D3BED521FA949C0089D139 /* manual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = manual.html; sourceTree = "<group>"; };
+		B7D3BED621FA949C0089D139 /* base64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base64.hpp; sourceTree = "<group>"; };
+		B7D3BED721FA949C0089D139 /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helper.cpp; sourceTree = "<group>"; };
+		B7D3BED821FA949C0089D139 /* feature_descriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = feature_descriptor.cpp; sourceTree = "<group>"; };
+		B7D3BED921FA949C0089D139 /* ldmarkmodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ldmarkmodel.cpp; sourceTree = "<group>"; };
+		B7D3BEDA21FA949C0089D139 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B7D3BEE521FA94C30089D139 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "HyperLandmark-iOS/opencv2.framework"; sourceTree = "<group>"; };
+		B7D3BEE721FA956A0089D139 /* opencv+parallel_for_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencv+parallel_for_.h"; sourceTree = "<group>"; };
+		B7D3BEE921FAA9610089D139 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B7D3BEEB21FAA96A0089D139 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B7D3BEED21FAA97A0089D139 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B7D3BEEF21FAAA5D0089D139 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +120,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D3BEF021FAAA5D0089D139 /* AssetsLibrary.framework in Frameworks */,
+				B7D3BEEE21FAA97A0089D139 /* CoreMedia.framework in Frameworks */,
+				B7D3BEEC21FAA96B0089D139 /* AVFoundation.framework in Frameworks */,
+				B7D3BEEA21FAA9610089D139 /* Accelerate.framework in Frameworks */,
+				B7D3BEE621FA94C30089D139 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +134,12 @@
 		B7D3BE6921FA93730089D139 = {
 			isa = PBXGroup;
 			children = (
+				B7D3BEE521FA94C30089D139 /* opencv2.framework */,
+				B7D3BE8B21FA949C0089D139 /* model */,
+				B7D3BE8E21FA949C0089D139 /* sdm-src */,
 				B7D3BE7421FA93730089D139 /* HyperLandmark-iOS */,
 				B7D3BE7321FA93730089D139 /* Products */,
+				B7D3BEE821FAA9610089D139 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,14 +157,190 @@
 				B7D3BE7521FA93730089D139 /* AppDelegate.h */,
 				B7D3BE7621FA93730089D139 /* AppDelegate.m */,
 				B7D3BE7821FA93730089D139 /* ViewController.h */,
-				B7D3BE7921FA93730089D139 /* ViewController.m */,
+				B7D3BE7921FA93730089D139 /* ViewController.mm */,
 				B7D3BE7B21FA93730089D139 /* Main.storyboard */,
 				B7D3BE7E21FA93750089D139 /* Assets.xcassets */,
 				B7D3BE8021FA93750089D139 /* LaunchScreen.storyboard */,
 				B7D3BE8321FA93750089D139 /* Info.plist */,
 				B7D3BE8421FA93750089D139 /* main.m */,
+				B7D3BEE721FA956A0089D139 /* opencv+parallel_for_.h */,
 			);
 			path = "HyperLandmark-iOS";
+			sourceTree = "<group>";
+		};
+		B7D3BE8B21FA949C0089D139 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE8C21FA949C0089D139 /* landmark-model.bin */,
+				B7D3BE8D21FA949C0089D139 /* haar_facedetection.xml */,
+			);
+			name = model;
+			path = "HyperLandmark-iOS/model";
+			sourceTree = "<group>";
+		};
+		B7D3BE8E21FA949C0089D139 /* sdm-src */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE8F21FA949C0089D139 /* hog.c */,
+				B7D3BE9021FA949C0089D139 /* include */,
+				B7D3BED721FA949C0089D139 /* helper.cpp */,
+				B7D3BED821FA949C0089D139 /* feature_descriptor.cpp */,
+				B7D3BED921FA949C0089D139 /* ldmarkmodel.cpp */,
+				B7D3BEDA21FA949C0089D139 /* main.cpp */,
+			);
+			name = "sdm-src";
+			path = "HyperLandmark-iOS/sdm-src";
+			sourceTree = "<group>";
+		};
+		B7D3BE9021FA949C0089D139 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE9121FA949C0089D139 /* helper.h */,
+				B7D3BE9221FA949C0089D139 /* cereal_extension */,
+				B7D3BE9621FA949C0089D139 /* feature_descriptor.h */,
+				B7D3BE9721FA949C0089D139 /* hog.h */,
+				B7D3BE9821FA949C0089D139 /* ldmarkmodel.h */,
+				B7D3BE9921FA949C0089D139 /* cereal */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B7D3BE9221FA949C0089D139 /* cereal_extension */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE9321FA949C0089D139 /* ThreadPool.h */,
+				B7D3BE9421FA949C0089D139 /* mat_serialization.hpp */,
+				B7D3BE9521FA949C0089D139 /* mat_cerealisation.hpp */,
+			);
+			path = cereal_extension;
+			sourceTree = "<group>";
+		};
+		B7D3BE9921FA949C0089D139 /* cereal */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE9A21FA949C0089D139 /* access.hpp */,
+				B7D3BE9B21FA949C0089D139 /* types */,
+				B7D3BEB221FA949C0089D139 /* macros.hpp */,
+				B7D3BEB321FA949C0089D139 /* cereal.hpp */,
+				B7D3BEB421FA949C0089D139 /* details */,
+				B7D3BEBA21FA949C0089D139 /* archives */,
+				B7D3BEC021FA949C0089D139 /* external */,
+			);
+			path = cereal;
+			sourceTree = "<group>";
+		};
+		B7D3BE9B21FA949C0089D139 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BE9C21FA949C0089D139 /* base_class.hpp */,
+				B7D3BE9D21FA949C0089D139 /* unordered_map.hpp */,
+				B7D3BE9E21FA949C0089D139 /* boost_variant.hpp */,
+				B7D3BE9F21FA949C0089D139 /* utility.hpp */,
+				B7D3BEA021FA949C0089D139 /* bitset.hpp */,
+				B7D3BEA121FA949C0089D139 /* array.hpp */,
+				B7D3BEA221FA949C0089D139 /* polymorphic.hpp */,
+				B7D3BEA321FA949C0089D139 /* vector.hpp */,
+				B7D3BEA421FA949C0089D139 /* map.hpp */,
+				B7D3BEA521FA949C0089D139 /* complex.hpp */,
+				B7D3BEA621FA949C0089D139 /* tuple.hpp */,
+				B7D3BEA721FA949C0089D139 /* queue.hpp */,
+				B7D3BEA821FA949C0089D139 /* list.hpp */,
+				B7D3BEA921FA949C0089D139 /* forward_list.hpp */,
+				B7D3BEAA21FA949C0089D139 /* set.hpp */,
+				B7D3BEAB21FA949C0089D139 /* string.hpp */,
+				B7D3BEAC21FA949C0089D139 /* chrono.hpp */,
+				B7D3BEAD21FA949C0089D139 /* deque.hpp */,
+				B7D3BEAE21FA949C0089D139 /* stack.hpp */,
+				B7D3BEAF21FA949C0089D139 /* memory.hpp */,
+				B7D3BEB021FA949C0089D139 /* common.hpp */,
+				B7D3BEB121FA949C0089D139 /* unordered_set.hpp */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		B7D3BEB421FA949C0089D139 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEB521FA949C0089D139 /* static_object.hpp */,
+				B7D3BEB621FA949C0089D139 /* traits.hpp */,
+				B7D3BEB721FA949C0089D139 /* polymorphic_impl.hpp */,
+				B7D3BEB821FA949C0089D139 /* helpers.hpp */,
+				B7D3BEB921FA949C0089D139 /* util.hpp */,
+			);
+			path = details;
+			sourceTree = "<group>";
+		};
+		B7D3BEBA21FA949C0089D139 /* archives */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEBB21FA949C0089D139 /* json.hpp */,
+				B7D3BEBC21FA949C0089D139 /* adapters.hpp */,
+				B7D3BEBD21FA949C0089D139 /* xml.hpp */,
+				B7D3BEBE21FA949C0089D139 /* portable_binary.hpp */,
+				B7D3BEBF21FA949C0089D139 /* binary.hpp */,
+			);
+			path = archives;
+			sourceTree = "<group>";
+		};
+		B7D3BEC021FA949C0089D139 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEC121FA949C0089D139 /* rapidjson */,
+				B7D3BECF21FA949C0089D139 /* rapidxml */,
+				B7D3BED621FA949C0089D139 /* base64.hpp */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		B7D3BEC121FA949C0089D139 /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEC221FA949C0089D139 /* reader.h */,
+				B7D3BEC321FA949C0089D139 /* prettywriter.h */,
+				B7D3BEC421FA949C0089D139 /* stringbuffer.h */,
+				B7D3BEC521FA949C0089D139 /* internal */,
+				B7D3BEC921FA949C0089D139 /* genericstream.h */,
+				B7D3BECA21FA949C0089D139 /* rapidjson.h */,
+				B7D3BECB21FA949C0089D139 /* filestream.h */,
+				B7D3BECC21FA949C0089D139 /* document.h */,
+				B7D3BECD21FA949C0089D139 /* writer.h */,
+				B7D3BECE21FA949C0089D139 /* license.txt */,
+			);
+			path = rapidjson;
+			sourceTree = "<group>";
+		};
+		B7D3BEC521FA949C0089D139 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEC621FA949C0089D139 /* strfunc.h */,
+				B7D3BEC721FA949C0089D139 /* stack.h */,
+				B7D3BEC821FA949C0089D139 /* pow10.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		B7D3BECF21FA949C0089D139 /* rapidxml */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BED021FA949C0089D139 /* rapidxml_iterators.hpp */,
+				B7D3BED121FA949C0089D139 /* rapidxml_print.hpp */,
+				B7D3BED221FA949C0089D139 /* rapidxml_utils.hpp */,
+				B7D3BED321FA949C0089D139 /* rapidxml.hpp */,
+				B7D3BED421FA949C0089D139 /* license.txt */,
+				B7D3BED521FA949C0089D139 /* manual.html */,
+			);
+			path = rapidxml;
+			sourceTree = "<group>";
+		};
+		B7D3BEE821FAA9610089D139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3BEEF21FAAA5D0089D139 /* AssetsLibrary.framework */,
+				B7D3BEED21FAA97A0089D139 /* CoreMedia.framework */,
+				B7D3BEEB21FAA96A0089D139 /* AVFoundation.framework */,
+				B7D3BEE921FAA9610089D139 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +401,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D3BE8221FA93750089D139 /* LaunchScreen.storyboard in Resources */,
+				B7D3BEDB21FA949C0089D139 /* landmark-model.bin in Resources */,
+				B7D3BEE021FA949C0089D139 /* manual.html in Resources */,
 				B7D3BE7F21FA93750089D139 /* Assets.xcassets in Resources */,
 				B7D3BE7D21FA93730089D139 /* Main.storyboard in Resources */,
+				B7D3BEDC21FA949C0089D139 /* haar_facedetection.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +416,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D3BE7A21FA93730089D139 /* ViewController.m in Sources */,
+				B7D3BEDD21FA949C0089D139 /* hog.c in Sources */,
+				B7D3BEE221FA949C0089D139 /* feature_descriptor.cpp in Sources */,
+				B7D3BE7A21FA93730089D139 /* ViewController.mm in Sources */,
+				B7D3BEE121FA949C0089D139 /* helper.cpp in Sources */,
+				B7D3BEE321FA949C0089D139 /* ldmarkmodel.cpp in Sources */,
 				B7D3BE8521FA93750089D139 /* main.m in Sources */,
+				B7D3BEE421FA949C0089D139 /* main.cpp in Sources */,
 				B7D3BE7721FA93730089D139 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,11 +567,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDZJX7VYT8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS/sdm-src/include",
+				);
 				INFOPLIST_FILE = "HyperLandmark-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS/sdm-src/include",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HoangVu.HyperLandmark-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,11 +600,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDZJX7VYT8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS/sdm-src/include",
+				);
 				INFOPLIST_FILE = "HyperLandmark-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyperLandmark-iOS/sdm-src/include",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HoangVu.HyperLandmark-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
